@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>RomaWed</title>
+	<link rel="stylesheet" href="css/reset.css">;
+	<link rel="stylesheet" href="css/style.css">;
 </head>
 <body>
 <header>
@@ -30,10 +32,10 @@
 <div class="me"><div class="title__container1">
 
 	<h2>ОБО МНЕ</h2>
-	<p>
+	<p class="text1">
  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum voluptatem odio itaque ipsa labore minima velit totam fugit! Alias molestiae fugit enim deleniti a, amet animi voluptate corrupti perferendis! Quod.
  </p>
-    <p>
+    <p class="text2">
  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus impedit, atque voluptatum molestiae vero nemo adipisci repellat nobis voluptatibus voluptates, deserunt maxime esse obcaecati ipsa.
  </p>
 		<input type="submit" value="Скачать резюме">
@@ -42,89 +44,118 @@
 
 <div class="i can"><div class="title__container2">
 
-	<h2>Я УМЕЮ</h2>
-	<h3>Веб-дизайн</h3>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat mollitia excepturi quidem animi quod debitis.</p>
-	<h3>Разработка</h3>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat mollitia excepturi quidem animi quod debitis.</p>
-	<h3>СЭО-оптимизация</h3>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat mollitia excepturi quidem animi quod debitis.</p>
-	<h3>Маркетинг</h3>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat mollitia excepturi quidem animi quod debitis.</p>
+	<h2>ЧТО Я УМЕЮ</h2>
+	<din class="skill1">
+	<img src="img/%D0%BD%D0%BE%D1%83%D1%82.png" >
+	<h3 class="comp">Веб-дизайн</h3>
+	<p class="comp1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat mollitia excepturi quidem animi quod debitis.</p>
+	</din>
+	<din class="skill2">
+	<img src="img/%D0%B7%D0%BD%D0%B0%D0%BA.png">
+	<h3 class="skob">Разработка</h3>
+	<p class="skob1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat mollitia excepturi quidem animi quod debitis.</p>
+	</din>
+	<din class="skill3">
+	<img src="img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png">
+	<h3 class="rak">СЭО-оптимизация</h3>
+	<p class="rak1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat mollitia excepturi quidem animi quod debitis.</p>
+	</din>
+	<din class="skill4">
+	<img src="img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" alt="ой">
+	<h3 class="grom">Маркетинг</h3>
+	<p class="grom1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat mollitia excepturi quidem animi quod debitis.</p>
+	</din>
 	
 </div></div>
 <div class="cases"><div class="title__container3">
 	
 	<h2>КЕЙСЫ</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, repellendus.</p>
-			<h3>CLIENT</h3>			
+	<p class="cases1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, repellendus.</p>
+	<din class="cases2">
+		<din class="cli">
+			<h3>CLIENT:</h3>			
 			<p>Какая-то компания</p>
-			<h3>WEDSITE</h3>
-			<p>http://www.somedomain.com</p>
-			<h3>Название проекта</h3>
+			</din>
+			<din class="com">
+			<h3>Название проекта:</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid totam expedita, nam, labore illum, aperiam odit hic inventore quod ullam, nisi pariatur sequi iste doloribus.</p>
+			</din>
+			<din class="web">
+			<h3>WEBSITE:</h3>
+			<p>http://www.somedomain.com</p>
+			</din>
+			</din>
 		
 	<input type="submit" value="VISIT LIVE SITE">
 
 </div></div>
 
 <div class="Price"><div class="title__container4">
-	<h2>Расчет стоймости</h2>
+	<h2 class="how">Расчет стоймости</h2>
 	<h3>Тип сайта</h3>
-	<select name="list" id="">
+	<din class="sel">
+	<select name="list1" id="">
 			<option value="opt1">1</option>
 			<option value="opt2">2</option>
-
 	</select>
+	</din>
 	<h3>Дизайн</h3>
-	<select name="list" id="">
+	<din class="sel">
+	<select name="list2" id="">
 			<option value="opt1">1</option>
 			<option value="opt2">2</option>
 
 	</select>
+	</din>
 	<h3>Адаптивность</h3>
-	<select name="list" id="" class="пункт">
+	<din class="sel">
+	<select name="list3" id="" class="пункт">
 			<option value="opt1">1</option>
 			<option value="opt2">2</option>
 
 	</select>
-	<table>
-		<tr>
-			<th><b>Сроки</b></th>
-			<th>0</th>
-		</tr>
-		<tr>
-			<th><b>Стоймость</b></th>
-			<th>0</th>
-		</tr>
-	</table>
-
+	</din>
+	<img src="img/itog.png" alt="">
+	<div class="time">
+		<h2>Сроки</h2>
+		<p>0</p>
+	</div>
+	<div class="price">
+		<h2>Стоймость</h2>
+		<p>0</p>
+</div>
 </div></div>
 
 <div class="Statistics"><div class="title__container5">
 	
 	<h2>НЕМНОГО СТАТИСТИКИ</h2>
-	<table width=100%>
-		<tr>
-			<th>0</th>
-			<th>0</th>
-			<th>0</th>
-			<th>0</th>
-		</tr>
-		<tr>
-			<th>СЧАСТЛИВЫХ КЛИЕНТОВ </th>
-			<th>ЧАСОВ РАБОТЫ </th>
-			<th>ПРОЕКТОВ ЗАВЕРШЕНО </th>
-			<th>НАГРАД ПОЛУЧЕНО </th>
-		</tr>
-	</table>
+	<div class="itemSkills1">
+		<img src="img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt="">
+		<p>0</p>
+			<h3>СЧАСТЛИВЫХ КЛИЕНТОВ</h3>
+	</div>
+	<div class="itemSkills2">
+		<img src="img/%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png" alt="">
+		<p>0</p>
+			<h3>ЧАСОВ РАБОТЫ</h3>
+	</div>
+	<div class="itemSkills3">
+		<img src="img/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt="">
+		<p>0</p>
+			<h3>ПРОЕКТОВ ЗАВЕРШЕНО</h3>
+	</div>
+	<div class="itemSkills4">
+		<img src="img/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt="">
+		<p>0</p>
+			<h3>НАГРАД ПОЛУЧЕНО</h3>
+	</div>
 	
 </div></div>
 
 <div class="review"><div class="title__container6">
 
 <h2>ОТЗЫВЫ</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt at ad ex dignissimos quibusdam ipsam, rem adipisci odit repellat cum quidem autem, dolores similique mollitia voluptate ut ab dolorem, praesentium.15</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt at ad ex dignissimos quibusdam ipsam, rem adipisci odit repellat cum quidem autem, dolores similique mollitia voluptate ut ab dolorem, praesentium.</p>
 <h4>Михаил, Ген директор ПАО “Газпром”.</h4>
 
 </div></div>
@@ -133,19 +164,34 @@
 
 <h2>МОИ КОНТАКТЫ</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quasi et quod, provident beatae expedita.</p>
-<ul>
-	<li>Санкт-Петербург Невский проспект 11</li>
-	<li>info@companyname.com</li>
-	<li>+7 999 999-99-99</li>
-</ul>
+<din class="vk">
+<din  class="geo">
+	<img src="img/geo.png" alt="">
+	<p>Санкт-Петербург Невский проспект 11</p>
+	</din>
+<din  class="mail">
+	<img src="img/mail.png" alt="">
+	<p>info@companyname.com</p>
+	</din>
+<din  class="pho">
+	<img src="img/phone.png" alt="">
+	<p>+7 999 999-99-99</p>
+</din></din>
 </div>
 <h3>Оставте мне сообщение</h3>
+<din class="knopka1">
 <input type="text" name="text_input" placeholder="Имя">
+</din>
+<din class="knopka2">
 <input type="text" name="text_input" placeholder="Email">
-<textarea name="first" id="1" cols="10" rows="5" placeholder="Сообщение"></textarea>
+</din>
+<din class="soob">
+<textarea name="first" id="1" cols="136" rows="5" placeholder="Сообщение"></textarea>
+</din>
+<din class="knopka3">
 <input type="submit" value="Отправить">
-</div>
+</din></div>
 <div class="map"><input type="submit" value="I'm here"></div>
-<div class="end"><h4>Copyright © 2021 Андрей Браун. Design by Web</h4></div>
+<div class="end"><h4>Copyright © 2021 Roman Geyto. Design by Web</h4></div>
 </body>
 </html>
