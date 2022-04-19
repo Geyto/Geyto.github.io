@@ -1,10 +1,35 @@
 body{
 	font-family: Arial, sans-serif;
+	
+}
+.loader {
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid #d17700;
+  border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear 2;
+}
+.body{
+	animation: fon 2s ease;
+}
+@keyframes fon{
+  0% { background: white;}
+  100% { background: none;}
+}
+@keyframes spin {
+  0% {transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 nav{
 	width: 100%;
 	height: 60px;
 	background: #344051;
+	position: fixed;
+	z-index: 1;
 }
 .logo{
 	color: #fff;
@@ -12,6 +37,9 @@ nav{
 	line-height: 60px;
 	padding-left: 380px;
 	float: left;
+	-webkit-animation: coming 2s ease;
+	-o-animation: coming 2s ease;
+	animation: coming 2s ease;
 }
 .menu{
 	float: left;
@@ -24,10 +52,14 @@ nav{
 	margin-right: 40px;
 	font-size: 15px;
 	text-transform: uppercase;
+	-webkit-animation: topshift 0.4s ease forwards;
+	-o-animation: topshift 0.4s ease forwards;
+	animation: topshift 0.4s ease forwards;
+	opacity: 0;
 }
 .main{
 	width: 100%;
-	height: calc(100% - 60px);
+	height: 100%;
 	background: url(../img/%D0%9F%D0%B0%D1%80%D0%B5%D0%BD%D1%8C.png) 90% 100%/auto 85% no-repeat, url(../img/%D1%84%D0%BE%D0%BD.jpg) center/cover no-repeat;
 }
 .title__container{
@@ -35,6 +67,14 @@ nav{
 		margin: 280px 0px 0px 404px;
 	color: #2c384a;
 	text-align: center;
+	-webkit-animation: titlemove 1s ease forwards;
+	-o-animation: titlemove 1s ease forwards;
+	animation: titlemove 1s ease forwards;
+	-webkit-animation-delay: 2.4s; 
+	-o-animation-delay: 2.4s; 
+	animation-delay: 2.4s;
+	opacity: 0;
+
 }
 .title__container h1{
 	font-size: 60px;
@@ -57,6 +97,75 @@ nav{
 	margin-top: 58px;
 	margin: 58px 14px 0px 14px;
 }
+.menu li a{
+	transition: all 0.1s;
+	color: white;
+	transform: scale(1);
+	display: inline-block;
+}
+.menu li a:visited{
+	color: white;
+}
+.menu li a:hover{
+	color: #ff9100;
+}
+.menu li a:active{
+	transform: scale(1.1);
+}
+.title__container input{
+transition: all 0.2s;
+}
+.title__container input:hover{
+	background: #344051;
+	color:white;
+}
+.title__container input:active{
+	transform: scale(1.1);
+}
+@keyframes coming{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes topshift{
+	from{
+		opacity: 0;
+		margin-top: -80px;
+	}
+	to{
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
+@keyframes titlemove{
+	from{
+		opacity: 0;
+		margin-left: -500px;
+	}
+	to{
+		opacity: 1;
+		margin-left: 404px;
+	}
+}
+.menu li:nth-child(2){
+	animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+	animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+	animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+	animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+	animation-delay: 2s;
+}
+
 .title__container1{
 	max-width: 100%;
 	height: 507px
@@ -70,14 +179,27 @@ nav{
 	background:  url(../img/line.png) 50% 50% no-repeat;
 	padding-bottom: 60px;
 }
+.boy{
+	position: relative;
+	top: 0%;
+	left: 43.5%;
+	animation: black 3s ease infinite;
+}
 .text1{
-	padding-top: 270px;
-	background: url(../img/black.png) center no-repeat;
+	padding-top: 70px;
 	color: #3f495a;
 	font-size: 15px;	
 	text-align: center;
 	margin: 0px 400px 0px 400px;
 	}
+@keyframes black{
+	from{
+		transform: rotate(0deg)
+	}
+	to{
+		transform: rotate(360deg)
+	}
+}
 .text2{
 	padding-top: 45px;
 	margin: 0px 400px 0px 400px;
@@ -96,6 +218,16 @@ nav{
 	padding: 0px 25px 0px 40px;
 	margin-top: 40px;
 	margin-left: 720px;	
+}
+.title__container1 input{
+transition: all 0.2s;
+}
+.title__container1 input:hover{
+	background: #344051 url(../img/Ikonka.png) 15px no-repeat;
+	color:white;
+}
+.title__container1 input:active{
+	transform: scale(1.1);
 }
 .title__container2{
 	height: 525px;
@@ -124,6 +256,17 @@ nav{
 	color: #3f495a;
 	text-align: center;
 	font-size: 12px;
+}
+.skills{
+	animation: ski 1s ease alternate infinite;
+	}
+@keyframes ski{
+	from{
+		margin-left: 0;
+	}
+	to{
+		margin-left: 40px;
+	}
 }
 .skill1 {
 	float: left;
@@ -213,6 +356,19 @@ nav{
 	margin-top: 20px;
 	margin-left: 210px;
 }
+.title__container3 input{
+transition: all 0.2s;
+}
+.title__container3 input:hover{
+	background: #344051;
+	border: 2px solid #344051;
+	border-radius: 5px;
+	
+	color:white;
+}
+.title__container3 input:active{
+	transform: scale(1.1);
+}
 .title__container4{
 	height: 750px;
 	width: 100%;
@@ -286,7 +442,7 @@ nav{
 .title__container5{
 	height: 490px;
 	width: 100%;
-	background: url(../img/fon2.png) center no-repeat;
+	background: url(../img/fon2.png) fixed center no-repeat;
 }
 .title__container5 h2{
 	color: #263244;
@@ -433,9 +589,10 @@ nav{
 	border: 2px solid #dadee3;
 	color: #5d5d5e;
 	font-size: 13px;
-	padding: 0px 280px 0px 25px;
+	padding: 0px 290px 0px 25px;
 	margin-top: 20px;
 	margin-left: 305px;
+	
 }
 .knopka2 input{
 	height: 35px;
@@ -444,7 +601,7 @@ nav{
 	border: 2px solid #dadee3;
 	color: #5d5d5e;
 	font-size: 13px;
-	padding: 0px 280px 0px 25px;
+	padding: 0px 290px 0px 25px;
 	margin-top: 20px;
 	margin-left: 15px;
 }
@@ -470,6 +627,16 @@ nav{
 	margin-top: 50px;
 	margin-left: 725px;
 }
+.knopka3 input{
+transition: all 0.2s;
+}
+.knopka3 input:hover{
+	background: none ;
+	color:white;
+}
+.knopka3 input:active{
+	transform: scale(1.1);
+}
 .map{
 	height: 350px;
 	width: 100%;
@@ -483,7 +650,17 @@ nav{
 	font-size: 22px;
 	padding: 0px 65px 0px 65px;
 	margin-top: 150px;
-	margin-left: 750px;
+	margin-left: 700px;
+}
+.map input{
+transition: all 0.2s;
+}
+.map input:hover{
+	background: white;
+	color:black;
+}
+.map input:active{
+	transform: scale(1.1);
 }
 .end{
 	height: 100px;
