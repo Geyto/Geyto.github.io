@@ -1,0 +1,30 @@
+div{
+	font-size: 20px;
+}
+span{
+	color: rgb(255,160,5)
+}
+.text{
+	color: darkgreen
+}
+[custom_data=""]{
+	color: darkred
+}
+.qw>p{
+		font-size: 15px
+.qw p{
+	font-size: 40px
+}
+	
+	p{
+	font-family: Arial, "Hevelvetica Neue", Helvetica, sans-serif;
+	font-size: 25px;
+	font-style: oblique;
+	font-weight: 800;
+		text-align: center;
+	text-decoration: underline;
+	text-shadow: 1px 1px 10px #000;
+	text-transform: capitalize;
+	text-indent: 50px;
+	
+}

@@ -1,0 +1,29 @@
+.body{
+	padding: 50px;
+	font-family: Arial, sans-serif;
+}
+.mainblock{
+	border: 2px solid cyan;
+	max-width: 800px;
+	height: 800px;
+	margin:  0 auto; /*выравнили по центру*/
+	position: relative;
+}
+.mainblock div{
+	line-height: 50px;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+}
+.block1 {
+	background-color: antiquewhite;
+	position: 
+}
+.block2 {
+	background-color:chartreuse ;
+
+}
+.block3 {
+	background-color:coral;
+
+}
